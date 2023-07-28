@@ -7,6 +7,8 @@
     <title>@yield('title', 'Laravel')</title>
 </head>
 <body>
+    @include('partials.header')
+
 
     <main>
         @yield('main-content')
@@ -14,6 +16,7 @@
 
 
 
+    @include('partials.footer')
     @vite('resources/js/app.js')
 </body>
 </html>
