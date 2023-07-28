@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class ShoreController extends Controller
 {
+
+
+    public function home(){
+    
+        return view('home');
+    }
     /**
      * Display a listing of the resource.
      *
