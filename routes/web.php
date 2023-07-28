@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\ShoreController as GuestShoreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('guest/shores', [GuestShoreController::class, 'index'])->name('guest.shores.index');
