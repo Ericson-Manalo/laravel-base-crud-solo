@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [GuestShoreController::class, 'home'])->name('homepage');
+
+
+
 Route::get('guest/shores', [GuestShoreController::class, 'index'])->name('guest.shores.index');
